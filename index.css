@@ -359,7 +359,7 @@ body {
 }
 
 .post {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 15px;
 }
 
@@ -367,6 +367,14 @@ body {
   text-align: center;
   font-family: "Bubblegum Sans", regular;
   font-size: 6rem;
+  padding: 1rem 0;
+  font-size: 4rem;
+}
+
+.post h2 {
+  text-align: left;
+  font-family: "Bubblegum Sans", regular;
+  font-size: 3rem;
   padding: 1rem 0;
   font-size: 4rem;
 }

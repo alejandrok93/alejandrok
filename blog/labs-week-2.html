@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alejandro - Web Developer</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Roboto"
+      rel="stylesheet"
+    />
+    <link href="../index.css" rel="stylesheet" />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      rel="stylesheet"
+    />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <a href="./index.html">Home</a> <a href="./blog.html">Blog</a>
+          <a href="#">Portfolio</a> <a href="#">Contact</a>
+        </nav>
+      </header>
+      <div class="post">
+        <h1>Labs: Second Week - Integration</h1>
+        <div class="post-content">
+<p>Project: RateMyDIY<br>
+Date: November 16, 2018
+</p>
+
+<h2>Individual Accomplishments:</h2>
+
+<p>
+This week was the second week of our Labs projects. I am working with a team of five developers to build a website application for publishing DIY projects and receiving feedback. Last week, our goal was to build the skeleton of the app and deploy it to the web. This week, the goal was to integrate both parts of the app and set up authentication. I spent most of the time this week working on getting authentication to work properly. That meant allowing a user to log in through the frontend and retrieving the user information from the database to display in the frontend once the user was logged in. I also worked on making changes on the front end to make it more dynamic. I added a dynamic link to the author of a project so that we could click on an author and get a list of projects. I also modified the landing page to retrieve the Featured Projects from our backend by creating an endpoint that queried the database and returned the projects. This work was reverted as it was part of a merge with the authentication work. Overall, it was a difficult week not because of the technical challenges we were facing but because of how we were working as a team and our inability to get things to work simply before moving on to more complex features. </p>
+
+
+
+<h2>Detailed Analysis</h2>
+
+<p>
+This week, I worked mainly on trying to get the authentication to work so that a user can log in through our app using a third party login system called Auth0. It took me a lot longer to understand what was going on in our backend when a user logged in. I built a middleware function that retrieved an authentication id from the request made by the client to validate that the user can access an endpoint. The middleware will be used to prevent a user from editing or modifying a post that they do not have permissions to modify. </p>
+
+<p>Ultimately, this did not end up working as we had not set up our authentication to use a token that can be retrieved by the backend to validate a user. We were working with session cookies and spent a lot of time trying to get it to work with the cookie stored on the frontend. I spent the majority of my time getting this to work and was not able to make it work, which was increasingly frustrating. At some point on Thursday morning I told the team that I needed help and I am not able to make it work and I don’t think I was able to do it. The rest of the team jumped in to help but we were still not able to get the authentication to work. We did a lot of pair programming towards the end of the week which I thought was helpful. I enjoyed working along another developer to try to solve a problem.</p>
+
+<h2>Tasks Pulled:</h2>
+
+<p>
+Middleware function for authentication:<br>
+Trello: https://trello.com/c/HE0HeZAI/73-added-middleware-to-check-user-for-authentication<br>
+Github: https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/45<br>
+</p>
+<p>
+Authentication:<br>
+Trello: https://trello.com/c/CGHpXkwr/86-authentication-retrieve-user-info-after-log-in<br>
+Github: does not work<br>
+</p>
+
+<p>
+Fixed author URL:<br>
+Trello: https://trello.com/c/0UgNSEuB/84-frontend-fixed-author-url<br>
+Github: https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/48<br>
+</p>
+
+<p>
+Featured Projects:<br>
+Trello: https://trello.com/c/ecorMMQm/85-modified-featured-projects-to-retrieve-project-data-from-backend<br>
+Github: PR was reverted because of authentication issues<br>
+</p>
+
+
+<h2>Milestone Reflections</h2>
+
+<p>This week was bad. </p>
+
+<p>The goal of this week was, essentially, to ensure that our front and back end servers are connected and integrated. This ended up being quite a challenge because we did not communicate properly as a team and kept working on different parts of the application without it integrating it. We focused on working towards getting all the pieces to work independently and integrating them after these were all done. This proved to be a failure as there were more things uncertain and we were not able to integrate the front and back end. Additionally, I started working on authentication this week because it was a big part of the requirements but I did not have an understanding of how it worked. This meant that I spent a lot of time trying to understand how our application was set up. It was harder to contribute to a piece of work that you don’t have much understanding on how it works yet have a deadline to get it to work. </p>
+
+<p>I think our main fault this week is that we focused on getting a complex part of the app working independently and we would connect it after, instead of getting a simpler version to work and then going from there. We should have spent our efforts at the beginning being clear about the MVP requirements and start from there. Instead, we wasted a lot of time getting our parts of the application working and then trying to integrate, which did not work. This is an important lesson and I think in the future we will be more careful about working together to get things to work together instead of spending too much time isolated trying to get individual pieces to work.</p>
+
+<h2>Mock Interview:<h2>
+
+<p>This week we conducted a mock interview with another student. We each had to solve a coding challenge and record our process as we are working through finding a solution. I worked on a challenge called Counting Votes that required me to write a function that counted the number of times a name appeared in a given array. It took me a long time to find a solution as I have a difficult time thinking clearly about the problem in that situation. I was able to solve it and have included the recording to my interview below.</p>
+
+<p>Mock Interview: https://youtu.be/Lu0HQq0dYa8</p>
+
+         </div>
+      </div>
+      
+      <hr class="divider" />
+      <footer class="footer">
+        <div class="social"></div>
+
+        <p>&copy; Copyright 2018</p>
+      </footer>
+    </div>
+  </body>
+</html>
