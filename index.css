@@ -382,10 +382,42 @@ body {
 .post p {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .post a {
   text-decoration: none;
   color: black;
+}
+
+.post-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.post-content .lambda-logo {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.post-content .react-logo {
+  width: 210px;
+  margin: 80px;
+  float: right;
+}
+
+.post-content .node-logo {
+  width: 150px;
+  margin: 50px;
+  float: left;
+}
+
+.post-content a {
+  border-bottom: 2px solid #12f0be;
+}
+
+.post-content a:hover {
+  background-color: #12f0be;
+  color: white;
 }
