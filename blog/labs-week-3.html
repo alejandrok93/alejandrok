@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Alejandro - Web Developer</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Roboto"
+			rel="stylesheet"
+		/>
+		<link href="../index.css" rel="stylesheet" />
+		<link
+			crossorigin="anonymous"
+			href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+			integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+			rel="stylesheet"
+		/>
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<nav class="nav">
+					<a href="../index.html">Home</a> <a href="../blog.html">Blog</a>
+					<a href="#">Portfolio</a> <a href="#">Contact</a>
+				</nav>
+			</header>
+			<div class="post">
+				<h1>Labs: Third Week - Feature Complete</h1>
+				<div class="post-content">
+					<p>
+						Project: RateMyDIY<br />
+						Date: November 30, 2018
+					</p>
+					<h2>Individual Accomplishments</h2>
+					<p>
+						This week the goal was to to build out all of the features for the
+						RateMyDIY project. We had to get the application to a point where it
+						was working properly and all the features were functional. This
+						included being able to create a project, edit/delete a project, add
+						a review, view all reviews, search for a project, etc. I worked on
+						the search functionality this week and on the ability to view all
+						projects for a particular user. I decided to focus on building the
+						search functionality earlier in the week, as we could use that for
+						building other features of the web application.
+					</p>
+					<p>
+						Once I had the search functionality working, I used that
+						infrastructure to work on some of the other features for the
+						website. For example, when you clicked on a username, it would
+						perform a search and return all the projects that are relevant to
+						that username. Additionally, clicking on a Popular Reviewer’s
+						username would return all the projects that the user has reviewed. I
+						enjoyed working on these features as it really involved working on
+						both the front and backend for every feature. I also worked with
+						Reactstrap for adding a pop up (Modal) when a user was not logged in
+						and performed a search. The pop up would encourage the user to log
+						in but would let them proceed if they did not want to log in.
+					</p>
+					<h2>Detailed Analysis</h2>
+					<p>
+						I chose to work on one of the key features of the website this week.
+						I decided to work on the ability for a user to search for a project.
+						The search functionality involved both front and backend work as I
+						had to develop how the website would capture the search term and
+						send it to the backend to be processed and return the relevant
+						projects. We decided to use a library called Fuse.js for searching
+						as this allowed for a more flexible search rather than simply
+						retrieving data from a SQL database using the specific search term.
+						I learned about tokenization search terms within an array, a
+						threshold for specificity, and assigning relevance to keys for the
+						library to return the results. I had a challenge as our data is
+						stored in a SQL database and the Fuse.js library required an array
+						of objects to search. My approach was to write a SQL statement that
+						would join all the (very normalized) tables we have in the database
+						to output an array of objects that the library can take in to
+						provide relevant results. As the dataset grows, it might become
+						inefficient to output everything from the database and we might opt
+						for a more robust solution like Elastic search or Apache Solr.
+					</p>
+					<p>
+						I followed an approach of making the search functionality use a GET
+						request and including the query in the URL. I thought this made
+						sense as it is more accessible for an API to retrieve relevant
+						projects and makes the search results by accessing a URL on the
+						frontend. Some downsides of this are that more complex search
+						queries can become tedious to add in a URL and might be easier to
+						provide an object with options for a search query.
+					</p>
+					<h2>Tasks Pulled In</h2>
+					<p>
+						Search functionality:<br />
+						Trello: https://trello.com/c/QnEshVPr/87-search-functionality<br />
+						Github (frontend):
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/67<br />
+						Github (backend):
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/69
+					</p>
+					<p>
+						Click on a maker:<br />
+						Trello: https://trello.com/c/pnMvW5RB/100-clicking-on-a-maker<br />
+						Github:
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/81
+					</p>
+					<p>
+						Click on a reviewer:<br />
+						Trello: https://trello.com/c/TRn4h5WV/112-clicking-on-a-reviewer<br />
+						Github:
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/86
+					</p>
+					<p>
+						Login Pop up:<br />
+						Trello: https://trello.com/c/6lqjgMky/108-dismissable-popup<br />
+						Github:
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/94
+					</p>
+					<h2>Milestones Reflections</h2>
+					<p>
+						The goal for this week was to build all of the features for the web
+						application. We had to connect all of the pieces we had been working
+						on in previous weeks so that the features work properly. I thought
+						this week was very productive and we moved along at a faster pace.
+						We made some real progress in building out the features as the set
+						up of the application was already done in previous weeks. The week
+						required a lot of reading other team member’s code and asking
+						questions to understand how a component was built so that I can
+						bring it to what I was building. This week started to feel like a
+						real development experience because we are working on already built
+						pieces and getting them to a point that these can be functional. The
+						experience can be both frustrating because sometimes it is harder to
+						understand how a component works and great because you can make
+						progress faster as the underlying pieces have already been built. I
+						really took advantage of the collaborative tools we have this week.
+						If I was working on a feature and needed to understand I would
+						message a team member and jump in a zoom or we would start a
+						liveshare to pair program. It really helped to be in constant
+						communication and I think it helped us a lot this week.
+					</p>
+					<p>RateMyDIY List of Features:</p>
+					<ul>
+						<li>- Create new DIY project</li>
+						<li>- View a project in detail</li>
+						<li>- Edit/Delete DIY project</li>
+						<li>- View my existing DIY projects</li>
+						<li>- Create a review for a project</li>
+						<li>- View reviews for a project</li>
+						<li>- Rate a review</li>
+						<li>- Login</li>
+						<li>- Signup (with welcome email)</li>
+						<li>- Reset password</li>
+						<li>- Clicking on a maker</li>
+						<li>- Clicking on a reviewer</li>
+						<li>- Search for a project</li>
+						<li>- Search for a maker</li>
+						<li>- Filter search results</li>
+					</ul>
+					<p>The features are working here: https://ratemydiy.netlify.com</p>
+
+					<h2>Mock Interview</h2>
+					<p>
+						This week we conducted a second mock interview with another student.
+						We each had to solve a coding challenge and record our process as we
+						are working through finding a solution. I had to solve a challenge
+						to build a Depth First Search algorithm given a tree data structure
+						with a recursive and an iterative solution. I don’t have much
+						experience working with trees so I was nervous about this code
+						challenge. I was surprised because I thought that the recursive
+						solution was going to be more challenging than an iterative one.
+						Yet, it ended up the complete opposite. The recursive solution came
+						more naturally to me and trying to solve it with an iterative
+						approach was harder.
+					</p>
+					<p>
+						I am starting to feel better at solving these challenges. I want to
+						continue practicing as I can feel myself getting better at these.
+					</p>
+					<p>
+						Here is the link for the mock interview:
+						https://youtu.be/jAbQin7FhJY
+					</p>
+				</div>
+			</div>
+
+			<hr class="divider" />
+			<footer class="footer">
+				<div class="social"></div>
+
+				<p>&copy; Copyright 2018</p>
+			</footer>
+		</div>
+	</body>
+</html>
