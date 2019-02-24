@@ -28,20 +28,83 @@
 				</nav>
 			</header>
 			<div class="post">
-				<h1>Labs: Second Week - Integration</h1>
+				<h1>Labs: First Week - Start Up</h1>
 				<div class="post-content">
 					<p>
 						Project: RateMyDIY<br />
-						Date: November 16, 2018
+						Date: November 9, 2018
 					</p>
 
 					<h2>Individual Accomplishments:</h2>
+					<p>
+						The project we were assigned to work on during Labs is a web
+						application to upload and review DIY projects. The idea is that
+						people who enjoy working on DIY projects can share them with a
+						community and receive feedback on their projects as well as reviews.
+						I worked on building the initial structure of the components for the
+						applications.I started with the Landing Page components and created
+						three subcomponents to hold the categories of projects: Featured
+						Projects, Popular Makers, Popular Reviewers which are containers for
+						displaying projects, makers, and reviewers. These were pretty
+						similar and only had a few differences in styling and data
+						displayed. I also worked on adding the Search Bar component, the
+						layout of the search page, and added a simple navigation to access
+						the pages of the project.
+					</p>
+					<p>
+						It was challenging to work on the setting up the components without
+						having a back-end to retrieve data once I was adding the redux
+						actions and reducers. I only worked on front-end tasks this week as
+						other team members were working on server tasks like authentication
+						and setting up the routes and the server did not start on my machine
+						because of environment issues. We also wasted a lot of time working
+						on getting very specific tasks working like Auth0 authentication and
+						setting up a MSSQL database locally that was not productive in
+						helping us towards the Sprint objective.
+					</p>
 
 					<h2>Detailed Analysis</h2>
-
+					<p>
+						I worked on the components for displaying the projects and users in
+						the landing page. The page is divided into three sections: featured
+						projects, popular makers, and popular reviewers. I decided to break
+						the page into three subcomponents so that they can be independent
+						and retrieve data. Each component can retrieve data from the server
+						to display the latest/best details to the user. I liked this
+						approach because it separates the page into individual pieces that
+						can be worked on and function independently. For example, if a use
+						case arises to display the popular makers in another part of the web
+						application, it would be possible to plug in that component. To
+						build the components, I had to refresh my knowledge of Redux to
+						create the corresponding actions and reducers and connect it to the
+						Redux store.
+					</p>
 					<h2>Tasks Pulled:</h2>
-
-					<h2>Milestone Reflections</h2>
+					<p>
+						Landing page<br />
+						Github:
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/4<br />
+						Trello:
+						https://trello.com/c/JnXUqiHL/35-frontend-landing-page-components-w-redux-store
+					</p>
+					<p>
+						Search Bar<br />
+						Github:
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/12<br />
+						Trello: https://trello.com/c/aiegjpvd/43-searchbar-component
+					</p>
+					<p>
+						Search Page<br />
+						Github:
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/21<br />
+						Trello: https://trello.com/c/elJG1HDX/49-search-page
+					</p>
+					<p>
+						Nav bar<br />
+						Github:
+						https://github.com/Lambda-School-Labs/Labs8-RateMyDIY/pull/22<br />
+						Trello: https://trello.com/c/PyBmHwJO/52-added-temporary-nav-bar
+					</p>
 				</div>
 			</div>
 
