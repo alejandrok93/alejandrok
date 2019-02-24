@@ -224,10 +224,12 @@ body {
 	font-size: 6rem;
 	padding: 1rem 0;
 }
-.container .intro .intro-text h2:hover {
+
+/* Removed hover for text that is not a link :( /*
+/* .container .intro .intro-text h2:hover {
 	background-color: #12f0be;
 	color: white;
-}
+} */
 .container .intro .intro-text p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
@@ -255,10 +257,10 @@ body {
 	font-size: 6rem;
 	padding: 1rem 0;
 }
-.container .work-experience .work-text h2:hover {
+/* .container .work-experience .work-text h2:hover {
 	background-color: #12f0be;
 	color: white;
-}
+} */
 .container .work-experience .work-text p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
@@ -310,10 +312,10 @@ body {
 	padding: 1rem 0;
 	text-align: right;
 }
-.container .more-info .work-text h2:hover {
+/* .container .more-info .work-text h2:hover {
 	background-color: #12f0be;
 	color: white;
-}
+} */
 .container .more-info .work-text p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
@@ -339,10 +341,10 @@ body {
 	padding: 1rem 0;
 	font-size: 4rem;
 }
-.container .more-info .content-block h1:hover {
+/* .container .more-info .content-block h1:hover {
 	background-color: #12f0be;
 	color: white;
-}
+} */
 .container .more-info .content-block p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 2rem;
