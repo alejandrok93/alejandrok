@@ -266,6 +266,17 @@ body {
 	font-size: 2rem;
 	padding: 1rem 0;
 }
+
+.container .work-experience .work-text ul {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	margin-left: 3rem;
+	list-style: circle;
+}
+
+.container .work-experience .work-text ul li {
+	margin: 10px 0;
+}
 .container .work-experience .timeline {
 	/*height: 15rem;*/
 	display: flex;
