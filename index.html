@@ -1,211 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-55362801-2"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alejandro Krasovsky // Full-Stack & AI Engineer</title>
+  <meta name="description" content="Senior Full-Stack & AI Engineer with 7+ years building production software. AI agents, legal tech automation, and scalable platforms." />
+  <meta name="author" content="Alejandro Krasovsky" />
 
-			gtag('config', 'UA-55362801-2');
-		</script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alejandro Krasovsky // Full-Stack & AI Engineer" />
+  <meta property="og:description" content="Senior Full-Stack & AI Engineer. AI-powered automation, legal tech, and scalable web applications." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alejandrok.me" />
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Alejandro Krasovsky- Software Developer</title>
-		<link
-			href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Roboto"
-			rel="stylesheet"
-		/>
-		<link href="index.css" rel="stylesheet" />
-		<link
-			crossorigin="anonymous"
-			href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-			integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-			rel="stylesheet"
-		/>
-		<!--[if lt IE 9]>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<div class="container">
-			<header class="header">
-				<nav class="nav">
-					<a href="./index.html">Home</a> <a href="./blog.html">Blog</a>
-					<a href="./projects.html">Projects</a>
-					<a href="Alejandro-krasovsky-Resume-2024.pdf" target="_blank">Resume</a
-					>
-				</nav>
-			</header>
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23111%22 width=%22100%22 height=%22100%22/><text x=%2250%22 y=%2270%22 font-size=%2250%22 font-weight=%22700%22 fill=%22%2300ffff%22 text-anchor=%22middle%22 font-family=%22monospace%22>AK</text></svg>" />
 
-			<section class="intro">
-				<img src="me-circle.jpg" />
-				<div class="intro-text">
-					<h2>Hi there</h2>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
-					<p>My name is Alejandro Krasovsky.</p>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
 
-					<p>
-						I like building web applications and reading about new technologies.
-						I am always learning about web development and trying to build cool
-						things. If you want to get in contact, send me an
-						<a href="mailto:alejandrok93@gmail.com">email</a>
-					</p>
+  <!-- Page loader -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-text">AK<span class="blink">_</span></div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <div class="loader-status">LOADING PORTFOLIO...</div>
+    </div>
+  </div>
 
-					<div class="social">
-						<a href="https://github.com/alejandrok93" target="_blank"
-							><i class="fab fa-github"></i
-						></a>
-						<a href="http://linkedin.com/in/alejandrokrasovsky" target="_blank"
-							><i class="fab fa-linkedin-in"></i
-						></a>
-						<a href="https://medium.com/@alejandrok11" target="_blank"
-							><i class="fab fa-medium-m"></i
-						></a>
-					</div>
-				</div>
-			</section>
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to content</a>
 
-			<hr class="divider" />
-			<section class="work-experience">
-				<div class="work-text">
-					<h2>work experience</h2>
-					<p>
-						Product focused developer with 5+ years of experience building
-						software applications in an agile environment. Skilled at
-						collaborating with an interdisciplinary team of developers,
-						designers, and product managers to launch user-centered software
-						applications
-					</p>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="nav-logo">AK<span class="blink">_</span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#talks">Talks</a>
+        <a href="#about">About</a>
+        <a href="https://codigoabiertomx.substack.com/" target="_blank" rel="noopener">Newsletter</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
-					<p style="font-weight:bold;">
-						Software Engineer at
-						<a
-								style="color:#12f0be;"
-								href="https://www.lawmatics.com/"
-								target="_blank"
-						>Lawmatics</a
-						>
-					</p>
-					<ul>
-						<li>
-							Developed new innovative features for a legal tech CRM built on Ruby on Rails with a React front-end that enables law
-							firms to automate their marketing workflow and internal processes
-						</li>
-						<li>
-							Implemented a generative AI functionality that leveraged powerful LLMs to create email templates based on firm and
-							contact information
-						</li>
-						<li>
-							Engineered a responsive dashboard interface utilizing ElasticSearch as the underlying data service, enabling rapid
-							retrieval and analysis of firm contacts
-						</li>
-					</ul>
+  <main id="main">
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-label">&gt; FULL-STACK &amp; AI ENGINEER<span class="blink">_</span></div>
+        <h1 class="hero-name glitch" data-text="Alejandro Krasovsky">Alejandro Krasovsky</h1>
+        <p class="hero-subtitle">
+          Building AI-powered software &amp; shipping things that matter.
+          <br />7+ years turning complex problems into working products.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">&lsqb; View Projects &rsqb;</a>
+          <a href="Alejandro-krasovsky-Resume-2024.pdf" target="_blank" rel="noopener" class="btn btn-outline">&lsqb; Resume.pdf &rsqb;</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/alejandrok93" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/alejandrokrasovsky" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="mailto:alejandrok93@gmail.com" aria-label="Email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <span>SCROLL</span>
+          <div class="scroll-arrow">&#9660;</div>
+        </div>
+      </div>
+    </section>
 
-					<p style="font-weight:bold;">
-						Experienced Associate at
-						<a
-							style="color:#12f0be;"
-							href="https://www.pwc.com/gx/en/services/advisory/consulting/technology.html"
-							target="_blank"
-							>PwC</a
-						>
-					</p>
-					<ul>
-						<li>
-							Spearheaded development and delivery of 5 mobile app projects,
-							including Digital Membership Card, Find a Doctor, Precision
-							Analytics, UX redesign, and Find Care to be functional on iOS and
-							Android OS for over 6 million users
-						</li>
-						<li>
-							Managed a 12-person engineering and QA team, ensuring delivery of
-							new, innovative features for consumer-facing mobile application of
-							a major healthcare provider
-						</li>
-						<li>
-							Collaborated with engineering teams, effectively communicating to
-							ensure clarity of project vision and full understanding of overall
-							product requirements
-						</li>
-						<li>
-							Drove all scrum meetings with engineering team and stakeholders,
-							ensuring successful delivery of sprint commitments
-						</li>
-					</ul>
-				</div>
+    <!-- ==================== MARQUEE ==================== -->
+    <div class="marquee-wrapper" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-content">&#9733; REACT &nbsp;&#9733; RUBY ON RAILS &nbsp;&#9733; TYPESCRIPT &nbsp;&#9733; AI/ML &nbsp;&#9733; NODE.JS &nbsp;&#9733; POSTGRESQL &nbsp;&#9733; LLMs &nbsp;&#9733; ELASTICSEARCH &nbsp;&#9733; AWS &nbsp;&#9733; AI AGENTS &nbsp;&#9733; PROMPT ENGINEERING &nbsp;&#9733; AUTOMATION &nbsp;</span>
+        <span class="marquee-content">&#9733; REACT &nbsp;&#9733; RUBY ON RAILS &nbsp;&#9733; TYPESCRIPT &nbsp;&#9733; AI/ML &nbsp;&#9733; NODE.JS &nbsp;&#9733; POSTGRESQL &nbsp;&#9733; LLMs &nbsp;&#9733; ELASTICSEARCH &nbsp;&#9733; AWS &nbsp;&#9733; AI AGENTS &nbsp;&#9733; PROMPT ENGINEERING &nbsp;&#9733; AUTOMATION &nbsp;</span>
+      </div>
+    </div>
 
-				<div class="work-table">
-					<!-- future work: add dots in a timeline and display info on hover
-          --><!--
-            <a href="#" class="dot education"></a>
-            <a href="#" class="dot pwc-intern"></a>
-            <a href="#" class="dot pwc-work"></a>
-          -->
-				</div>
-			</section>
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-heading"><span class="accent">//</span> Projects</h2>
+        <p class="section-desc">Things I've built that I'm proud of.</p>
 
-			<hr class="divider" />
-			<section class="more-info">
-				<div class="work-text extra">
-					<h2>software development</h2>
+        <div class="projects-list">
+          <!-- Project 1: QualifyAI (Featured) -->
+          <article class="project-card featured">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <span class="project-badge">&#9733; FEATURED</span>
+                <h3 class="project-title">QualifyAI</h3>
+                <p class="project-tagline">Intelligent Lead Qualification for Law Firms</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  Built an AI-powered lead scoring system with explainable confidence levels,
+                  automated workflow triggers, and reporting dashboards for legal intake teams.
+                  Attorneys can see <em>why</em> a lead scored high or low &mdash; no black-box predictions.
+                </p>
+                <div class="project-outcomes">
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Reduced manual lead review time</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Improved intake consistency across firms</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Automated workflow routing by score</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span>Ruby on Rails</span>
+                  <span>React</span>
+                  <span>LLMs</span>
+                  <span>PostgreSQL</span>
+                  <span>AI Agents</span>
+                </div>
+              </div>
+            </div>
+          </article>
 
-					<p>
-						I am currently working as a full stack software engineer at
-						<a href="https://www.lawmatics.com/" target="_blank">Lawmatics</a>
-						building software that help law firms thrive. I have experience building web applications using
-						front-end languages like HTML/CSS and modern frameworks like React. I have backend software experience
-						in Node.JS and Ruby on Rails and working with multiple databases.
-						Take a look at some of the projects I've built
-						<a style="color: #12f0be;" href="./projects.html">here </a>
-					</p>
-				</div>
+          <!-- Project 2: Custom Dashboards -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3 class="project-title">Custom Dashboards</h3>
+                <p class="project-tagline">Real-Time Legal Data Visualization</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  Built a fully customizable dashboard system that lets law firms visualize
+                  business data across their entire practice &mdash; intake pipelines, billing,
+                  marketing campaigns, and client acquisition &mdash; all powered by
+                  <em>ElasticSearch</em> for fast, flexible querying across millions of records.
+                </p>
+                <div class="project-outcomes">
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Centralized metrics across intake, CRM, billing &amp; marketing</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Sub-second queries over millions of data points</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Adopted across thousands of law firms</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span>Ruby on Rails</span>
+                  <span>React</span>
+                  <span>ElasticSearch</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </article>
 
-				<div class="blocks">
-					<div class="content-block">
-						<h1>dev</h1>
+          <!-- Project 3: Healthcare Mobile Platform -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3 class="project-title">Healthcare Mobile Platform</h3>
+                <p class="project-tagline">5 Apps &bull; 6M+ Users &bull; Zero Critical Incidents</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  Led a 12-person engineering team delivering five consumer-facing mobile apps
+                  for a major healthcare provider at PwC. Digital membership cards, provider search,
+                  care navigation &mdash; the whole suite, across iOS and Android.
+                </p>
+                <div class="project-outcomes">
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Shipped 5 apps to 6M+ users</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Zero critical production incidents</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Delivery process adopted by other teams</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span>iOS</span>
+                  <span>Android</span>
+                  <span>Agile/Scrum</span>
+                  <span>Enterprise Arch</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-						<p>
-							I&#39;ve built applications on iOS and Android and the web. I have
-							5+ years of experience building quality software working small and large software companies.
-						</p>
-					</div>
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-heading"><span class="accent">//</span> Skills</h2>
 
-					<div class="content-block">
-						<h1>product</h1>
+        <div class="terminal">
+          <div class="terminal-chrome">
+            <span class="terminal-dot" style="background:#ff5f57"></span>
+            <span class="terminal-dot" style="background:#febc2e"></span>
+            <span class="terminal-dot" style="background:#28c840"></span>
+            <span class="terminal-title">alejandro@dev:~/skills</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="prompt">$</span> cat backend.txt
+            </div>
+            <div class="terminal-output">Ruby on Rails &middot; Node.js &middot; Express &middot; PostgreSQL &middot; ElasticSearch &middot; REST APIs</div>
 
-						<p>
-							I am focused on building products that address real world
-							problems. I use data to drive decisions and look for signals that
-							let me know that I am on the right track
-						</p>
-					</div>
+            <div class="terminal-line">
+              <span class="prompt">$</span> cat frontend.txt
+            </div>
+            <div class="terminal-output">React &middot; Redux &middot; TypeScript &middot; JavaScript &middot; HTML/CSS &middot; Responsive Design</div>
 
-					<div class="content-block">
-						<h1>strategy</h1>
+            <div class="terminal-line">
+              <span class="prompt">$</span> cat ai-ml.txt
+            </div>
+            <div class="terminal-output">LLM Integration &middot; Prompt Engineering &middot; RAG Pipelines &middot; Scoring Systems &middot; Guardrails &amp; Evals &middot; Tool Calling</div>
 
-						<p>
-							I understand that to achieve bold goals it&#39;s necessary to have
-							a clear vision and define a roadmap to success. I am passionate
-							about using software to solve real problems
-						</p>
-					</div>
-				</div>
-			</section>
+            <div class="terminal-line">
+              <span class="prompt">$</span> cat devops.txt
+            </div>
+            <div class="terminal-output">AWS &middot; CI/CD &middot; Git &middot; Docker &middot; Agile/Scrum &middot; Code Review</div>
 
-			<hr class="divider" />
-			<footer class="footer">
-				<div class="social"></div>
+            <div class="terminal-line">
+              <span class="prompt">$</span> <span class="blink">_</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-				<p>alejandrok inc. &copy; Copyright 2024</p>
-			</footer>
-		</div>
-	</body>
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-heading"><span class="accent">//</span> About</h2>
+        <div class="about-layout">
+          <div class="about-photo-wrap" id="photo-wrap">
+            <img src="alejandro-ai-photoshoot.jpeg" alt="Alejandro Krasovsky" class="about-photo" width="200" height="200" loading="lazy" />
+          </div>
+          <div class="about-text">
+            <p>
+              I'm a senior full-stack engineer based in <span class="hl-cyan">Mexico City</span>,
+              with 7+ years building production software at places like
+              <span class="hl-cyan">Lawmatics</span> and <span class="hl-pink">PwC</span>.
+            </p>
+            <p>
+              Right now I'm shipping AI-powered features that help legal professionals
+              work smarter &mdash; lead scoring, custom dashboards, intelligent automation.
+              Before that, I led mobile development for a major healthcare provider,
+              managing 12 engineers and delivering to millions of users.
+            </p>
+            <p>
+              I also write <a href="https://codigoabiertomx.substack.com/" target="_blank" rel="noopener" class="hl-pink">Codigo Abierto</a>
+              &mdash; a newsletter about tech, AI, and the digital landscape in Mexico.
+              Honest takes on what's actually happening, no hype.
+            </p>
+            <p>
+              When I'm not coding or writing, I'm probably reading about whatever
+              new tech thing caught my attention this week.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TALKS ==================== -->
+    <section id="talks" class="section section-alt">
+      <div class="container">
+        <h2 class="section-heading"><span class="accent">//</span> Talks &amp; Speaking</h2>
+        <p class="section-desc">Sharing what I know with the community.</p>
+
+        <div class="talks-list">
+          <article class="talk-card">
+            <div class="talk-image">
+              <img src="img/talk-mexico-tech-week.jpg" alt="Alejandro Krasovsky speaking at Mexico Tech Week" loading="lazy" />
+            </div>
+            <div class="talk-info">
+              <div class="talk-meta">
+                <span class="talk-date">Oct 2025</span>
+                <span class="talk-location">Mexico City</span>
+              </div>
+              <h3 class="talk-title">&iquest;C&oacute;mo construir Agentes de IA?</h3>
+              <p class="talk-event">Mexico Tech Week &mdash; The Pool, CDMX</p>
+              <p class="talk-desc">
+                Hands-on workshop on building AI agents in TypeScript using LLMs
+                and modern tooling. From simple agent implementations to functional
+                prototypes for real-world applications &mdash; assistants, chatbots,
+                and automation.
+              </p>
+              <div class="talk-tags">
+                <span>AI Agents</span>
+                <span>TypeScript</span>
+                <span>LLMs</span>
+                <span>Workshop</span>
+              </div>
+              <a href="https://luma.com/16f34tyc" target="_blank" rel="noopener" class="talk-link">&lsqb; Event Details &rsqb;</a>
+            </div>
+          </article>
+
+          <article class="talk-card">
+            <div class="talk-image">
+              <img src="img/talk-speaking-2.jpg" alt="Alejandro Krasovsky presenting at AI/IA CDMX meetup" loading="lazy" />
+            </div>
+            <div class="talk-info">
+              <div class="talk-meta">
+                <span class="talk-date">Dec 2025</span>
+                <span class="talk-location">Mexico City</span>
+              </div>
+              <h3 class="talk-title">Mind the Loop: Empowering AI Agents to Reason, Decide, and Do</h3>
+              <p class="talk-event">AI/IA CDMX &mdash; Casa Rafael Galv&aacute;n, Roma Norte</p>
+              <p class="talk-desc">
+                A deep dive into building AI agents that actually work in production.
+                Covered LLM fundamentals driving agent reasoning, when to use agents
+                vs. simpler alternatives, and frameworks for safely deploying them
+                in real-world applications.
+              </p>
+              <div class="talk-tags">
+                <span>AI Agents</span>
+                <span>LLMs</span>
+                <span>Production</span>
+                <span>Talk</span>
+              </div>
+              <a href="https://www.meetup.com/ai-cdmx/events/311724519/" target="_blank" rel="noopener" class="talk-link">&lsqb; Event Details &rsqb;</a>
+            </div>
+          </article>
+
+          <article class="talk-card">
+            <div class="talk-image-placeholder" aria-label="Talk photo placeholder">
+              <span class="placeholder-icon">&#9654;</span>
+              <span class="placeholder-label">PHOTO</span>
+            </div>
+            <div class="talk-info">
+              <div class="talk-meta">
+                <span class="talk-date">Coming Soon</span>
+                <span class="talk-location">Mexico City</span>
+              </div>
+              <h3 class="talk-title">More talks in the works</h3>
+              <p class="talk-event">Stay tuned</p>
+              <p class="talk-desc">
+                I'm always looking for opportunities to share knowledge and connect
+                with the dev community. If you want me to speak at your event,
+                <a href="#contact" class="hl-cyan">let me know</a>.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="section-heading"><span class="accent">//</span> Say Hello</h2>
+          <p class="section-desc">Want to work together? Have a question? Just want to say hi?</p>
+          <a href="mailto:alejandrok93@gmail.com" class="btn btn-primary btn-lg">&lsqb; Send Email &rsqb;</a>
+          <div class="contact-links">
+            <a href="https://github.com/alejandrok93" target="_blank" rel="noopener">&lsqb; GitHub &rsqb;</a>
+            <a href="https://linkedin.com/in/alejandrokrasovsky" target="_blank" rel="noopener">&lsqb; LinkedIn &rsqb;</a>
+            <a href="Alejandro-krasovsky-Resume-2024.pdf" target="_blank" rel="noopener">&lsqb; Resume &rsqb;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-badges">
+          <span class="retro-badge">Best viewed at 1024x768</span>
+          <span class="retro-badge">Visitors: <span id="visitor-counter">000000</span></span>
+        </div>
+        <p class="footer-copy">&copy; 2026 Alejandro Krasovsky &mdash; Built with HTML, CSS &amp; caffeine</p>
+        <div class="footer-links">
+          <a href="https://github.com/alejandrok93" target="_blank" rel="noopener">&lsqb; GitHub &rsqb;</a>
+          <a href="https://linkedin.com/in/alejandrokrasovsky" target="_blank" rel="noopener">&lsqb; LinkedIn &rsqb;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">&#9650; TOP</button>
+
+  <!-- Cursor trail dots -->
+  <div class="cursor-dot" id="dot-1" aria-hidden="true"></div>
+  <div class="cursor-dot" id="dot-2" aria-hidden="true"></div>
+  <div class="cursor-dot" id="dot-3" aria-hidden="true"></div>
+
+  <script>
+    /* ============================================================
+       Page Loader
+       ============================================================ */
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        setTimeout(() => {
+          loader.classList.add('loaded');
+          setTimeout(() => { loader.style.display = 'none'; }, 600);
+        }, 1400);
+      }
+    });
+
+    /* ============================================================
+       Mobile navigation toggle
+       ============================================================ */
+    const toggle = document.getElementById('nav-toggle');
+    const links = document.getElementById('nav-links');
+    if (toggle && links) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !expanded);
+        links.classList.toggle('open');
+      });
+      links.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          toggle.setAttribute('aria-expanded', 'false');
+          links.classList.remove('open');
+        });
+      });
+    }
+
+    /* ============================================================
+       Cursor trail (desktop only)
+       ============================================================ */
+    if (window.matchMedia('(pointer: fine)').matches) {
+      const dots = [
+        document.getElementById('dot-1'),
+        document.getElementById('dot-2'),
+        document.getElementById('dot-3')
+      ];
+      let mouseX = 0, mouseY = 0;
+      const positions = dots.map(() => ({ x: 0, y: 0 }));
+
+      document.addEventListener('mousemove', e => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function animateDots() {
+        positions.forEach((pos, i) => {
+          const target = i === 0 ? { x: mouseX, y: mouseY } : positions[i - 1];
+          const ease = 0.2 - i * 0.04;
+          pos.x += (target.x - pos.x) * ease;
+          pos.y += (target.y - pos.y) * ease;
+          if (dots[i]) {
+            dots[i].style.left = pos.x + 'px';
+            dots[i].style.top = pos.y + 'px';
+            dots[i].style.opacity = '1';
+          }
+        });
+        requestAnimationFrame(animateDots);
+      }
+      animateDots();
+    }
+
+    /* ============================================================
+       Back to top button
+       ============================================================ */
+    const backBtn = document.getElementById('back-to-top');
+    if (backBtn) {
+      window.addEventListener('scroll', () => {
+        backBtn.classList.toggle('visible', window.scrollY > 500);
+      }, { passive: true });
+      backBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    /* ============================================================
+       Visitor counter animation
+       ============================================================ */
+    const counterEl = document.getElementById('visitor-counter');
+    if (counterEl) {
+      const target = Math.floor(Math.random() * 4000) + 8000;
+      let current = 0;
+      const step = Math.ceil(target / 60);
+      function countUp() {
+        current = Math.min(current + step, target);
+        counterEl.textContent = String(current).padStart(6, '0');
+        if (current < target) requestAnimationFrame(countUp);
+      }
+      /* Start counting when footer is visible */
+      const obs = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) { countUp(); obs.disconnect(); }
+      }, { threshold: 0.3 });
+      obs.observe(counterEl);
+    }
+
+    /* ============================================================
+       Scroll-triggered fade-in for sections
+       ============================================================ */
+    const fadeEls = document.querySelectorAll('.project-card, .terminal, .about-layout, .talk-card, .contact-content');
+    const fadeObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          fadeObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    fadeEls.forEach(el => fadeObs.observe(el));
+
+    /* ============================================================
+       Photo click confetti effect
+       ============================================================ */
+    const photoWrap = document.getElementById('photo-wrap');
+    if (photoWrap) {
+      photoWrap.addEventListener('click', () => {
+        photoWrap.classList.add('clicked');
+        /* Create pixel confetti */
+        for (let i = 0; i < 20; i++) {
+          const pixel = document.createElement('span');
+          pixel.className = 'confetti-pixel';
+          const angle = (Math.PI * 2 / 20) * i;
+          const dist = 60 + Math.random() * 80;
+          pixel.style.setProperty('--tx', Math.cos(angle) * dist + 'px');
+          pixel.style.setProperty('--ty', Math.sin(angle) * dist + 'px');
+          pixel.style.background = ['#00ffff', '#ff00ff', '#39ff14', '#ffff00'][Math.floor(Math.random() * 4)];
+          photoWrap.appendChild(pixel);
+          setTimeout(() => pixel.remove(), 800);
+        }
+        setTimeout(() => photoWrap.classList.remove('clicked'), 600);
+      });
+    }
+  </script>
+</body>
 </html>
