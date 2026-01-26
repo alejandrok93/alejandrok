@@ -3,35 +3,50 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alejandro Krasovsky | Senior Full-Stack & AI Engineer</title>
-  <meta name="description" content="Senior Full-Stack & AI Engineer with 7+ years building production software. Specializing in legal tech intake automation, AI agents, and scalable platforms." />
+  <title>Alejandro Krasovsky // Full-Stack & AI Engineer</title>
+  <meta name="description" content="Senior Full-Stack & AI Engineer with 7+ years building production software. AI agents, legal tech automation, and scalable platforms." />
   <meta name="author" content="Alejandro Krasovsky" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Alejandro Krasovsky | Senior Full-Stack & AI Engineer" />
-  <meta property="og:description" content="Senior Full-Stack & AI Engineer with 7+ years building production software. Specializing in legal tech, AI-powered automation, and scalable web applications." />
+  <meta property="og:title" content="Alejandro Krasovsky // Full-Stack & AI Engineer" />
+  <meta property="og:description" content="Senior Full-Stack & AI Engineer. AI-powered automation, legal tech, and scalable web applications." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://alejandrok.me" />
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%230d9488%22 rx=%2216%22 width=%22100%22 height=%22100%22/><text x=%2250%22 y=%2268%22 font-size=%2252%22 font-weight=%22700%22 fill=%22white%22 text-anchor=%22middle%22 font-family=%22system-ui%22>AK</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23111%22 width=%22100%22 height=%22100%22/><text x=%2250%22 y=%2270%22 font-size=%2250%22 font-weight=%22700%22 fill=%22%2300ffff%22 text-anchor=%22middle%22 font-family=%22monospace%22>AK</text></svg>" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <!-- Skip to content (accessibility) -->
+  <!-- Scanline overlay -->
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- Page loader -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-text">AK<span class="blink">_</span></div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <div class="loader-status">LOADING PORTFOLIO...</div>
+    </div>
+  </div>
+
+  <!-- Skip to content -->
   <a href="#main" class="skip-link">Skip to content</a>
 
   <header class="site-header">
     <nav class="nav" aria-label="Main navigation">
-      <a href="/" class="nav-logo" aria-label="Home">AK</a>
+      <a href="/" class="nav-logo">AK<span class="blink">_</span></a>
       <div class="nav-links" id="nav-links">
-        <a href="#case-studies">Case Studies</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#about">About</a>
         <a href="Alejandro-krasovsky-Resume-2024.pdf" target="_blank" rel="noopener">Resume</a>
         <a href="#contact" class="nav-cta">Contact</a>
@@ -48,16 +63,15 @@
     <!-- ==================== HERO ==================== -->
     <section class="hero">
       <div class="container">
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-name">Alejandro Krasovsky</h1>
-        <p class="hero-title">Senior Full-Stack & AI Engineer</p>
+        <div class="hero-label">&gt; FULL-STACK &amp; AI ENGINEER<span class="blink">_</span></div>
+        <h1 class="hero-name glitch" data-text="Alejandro Krasovsky">Alejandro Krasovsky</h1>
         <p class="hero-subtitle">
-          I build intelligent systems: AI&#8209;driven automation for complex
-          workflows, backed by platforms that scale to millions.
+          Building AI-powered software &amp; shipping things that matter.
+          <br />7+ years turning complex problems into working products.
         </p>
-        <div class="hero-cta">
-          <a href="#case-studies" class="btn btn-primary">View Case Studies</a>
-          <a href="Alejandro-krasovsky-Resume-2024.pdf" target="_blank" rel="noopener" class="btn btn-secondary">Download Resume</a>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">&lsqb; View Projects &rsqb;</a>
+          <a href="Alejandro-krasovsky-Resume-2024.pdf" target="_blank" rel="noopener" class="btn btn-outline">&lsqb; Resume.pdf &rsqb;</a>
         </div>
         <div class="hero-social">
           <a href="https://github.com/alejandrok93" target="_blank" rel="noopener" aria-label="GitHub">
@@ -70,472 +84,187 @@
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
           </a>
         </div>
-      </div>
-    </section>
-
-    <!-- ==================== DIVIDER ==================== -->
-    <div class="hero-divider" aria-hidden="true">
-      <div class="container">
-        <hr />
-      </div>
-    </div>
-
-    <!-- ==================== CASE STUDIES ==================== -->
-    <section id="case-studies" class="section">
-      <div class="container">
-        <h2 class="section-title">Case Studies</h2>
-        <p class="section-subtitle">Select projects that demonstrate end-to-end ownership, technical depth, and measurable outcomes.</p>
-
-        <!-- Case Study 1: QualifyAI (Featured) -->
-        <article class="case-study featured">
-          <div class="case-study-header">
-            <span class="case-study-badge">Featured</span>
-            <div class="case-study-tags">
-              <span class="tag">Legal Tech</span>
-              <span class="tag">AI/ML</span>
-              <span class="tag">Production</span>
-            </div>
-            <h3>QualifyAI &mdash; Intelligent Lead Qualification</h3>
-            <p class="case-study-summary">
-              Built an AI-powered lead scoring system with explainable confidence levels,
-              automated workflow triggers, and reporting dashboards for legal intake teams.
-            </p>
-          </div>
-
-          <div class="case-study-body">
-            <div class="case-study-grid">
-              <div class="case-study-detail">
-                <h4>Business Problem</h4>
-                <p>
-                  Law firms receive hundreds of inbound leads but lack a systematic way to
-                  qualify them. Manual review is inconsistent, slow, and leads to missed
-                  opportunities or wasted attorney time on low-quality prospects.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Technical Challenge</h4>
-                <p>
-                  Build a scoring system that attorneys actually trust. The model needed to
-                  produce explainable scores (not black-box predictions), handle variable
-                  data quality from different intake sources, and integrate seamlessly into
-                  existing CRM workflows.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Constraints</h4>
-                <ul>
-                  <li>Explainability required &mdash; attorneys need to understand why a lead scored high or low</li>
-                  <li>Must integrate with existing CRM workflows without disruption</li>
-                  <li>Data privacy compliance for sensitive client information</li>
-                  <li>Handle inconsistent lead data quality across intake channels</li>
-                </ul>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>What I Owned</h4>
-                <p>
-                  Led architecture design and full-stack implementation. Owned the scoring
-                  algorithm design, confidence calibration, workflow trigger system,
-                  reporting dashboard, and cross-team coordination with product and
-                  customer success.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Approach</h4>
-                <ul>
-                  <li>Designed multi-signal scoring with weighted factors and transparent reasoning</li>
-                  <li>Built confidence calibration layer that surfaces uncertainty to users</li>
-                  <li>Created configurable workflow triggers based on score thresholds</li>
-                  <li>Implemented reporting dashboard for intake team visibility and audit trails</li>
-                  <li>Shipped iteratively with tight feedback loops from early-access firms</li>
-                </ul>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Outcomes</h4>
-                <ul class="outcomes">
-                  <li>Reduced manual lead review time for intake teams</li>
-                  <li>Improved intake consistency across participating firms</li>
-                  <li>Automated workflow routing based on qualification scores</li>
-                  <li>Shipped to production with measurable adoption and retention</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="case-study-tech">
-              <strong>Stack:</strong> Ruby on Rails, React, LLMs, PostgreSQL, ElasticSearch
-            </div>
-          </div>
-        </article>
-
-        <!-- Case Study 2: AI Email Generation -->
-        <article class="case-study">
-          <div class="case-study-header">
-            <div class="case-study-tags">
-              <span class="tag">Legal Tech</span>
-              <span class="tag">Generative AI</span>
-              <span class="tag">Full-Stack</span>
-            </div>
-            <h3>AI-Powered Email Generation for Law Firms</h3>
-            <p class="case-study-summary">
-              Designed and shipped an LLM-powered email template generator that uses firm
-              and contact context to produce personalized client communications.
-            </p>
-          </div>
-
-          <div class="case-study-body">
-            <div class="case-study-grid">
-              <div class="case-study-detail">
-                <h4>Business Problem</h4>
-                <p>
-                  Attorneys spend significant time writing personalized outreach and
-                  follow-up emails. Template libraries help, but they're generic and
-                  don't account for specific firm tone, practice area, or contact context.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Technical Challenge</h4>
-                <p>
-                  Integrate LLM capabilities into a production CRM where output quality,
-                  latency, and cost all matter. Generated emails must match firm voice,
-                  use accurate contact details, and never hallucinate legal information.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Constraints</h4>
-                <ul>
-                  <li>Output must be professional and legally appropriate</li>
-                  <li>Must use real firm and contact data without leaking across tenants</li>
-                  <li>Latency budget: users expect near-instant generation</li>
-                  <li>Cost-effective at scale across thousands of firms</li>
-                </ul>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>What I Owned</h4>
-                <p>
-                  End-to-end feature ownership: prompt engineering, API integration,
-                  context assembly pipeline, UI implementation, and production rollout.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Approach</h4>
-                <ul>
-                  <li>Built context assembly pipeline that pulls firm profile, contact history, and practice area data</li>
-                  <li>Engineered prompts with structured output constraints and tone calibration</li>
-                  <li>Implemented streaming responses for perceived performance</li>
-                  <li>Added guardrails to prevent hallucinated legal claims or incorrect contact details</li>
-                </ul>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Outcomes</h4>
-                <ul class="outcomes">
-                  <li>Enabled contextual email drafting for thousands of law firms</li>
-                  <li>Reduced email composition time for attorneys</li>
-                  <li>Shipped with high adoption rates across the customer base</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="case-study-tech">
-              <strong>Stack:</strong> Ruby on Rails, React, LLM APIs, PostgreSQL
-            </div>
-          </div>
-        </article>
-
-        <!-- Case Study 3: Healthcare Mobile Platform -->
-        <article class="case-study">
-          <div class="case-study-header">
-            <div class="case-study-tags">
-              <span class="tag">Healthcare</span>
-              <span class="tag">Mobile</span>
-              <span class="tag">Team Leadership</span>
-            </div>
-            <h3>Healthcare Mobile Platform &mdash; 6M+ Users</h3>
-            <p class="case-study-summary">
-              Led development and delivery of five consumer-facing mobile applications
-              for a major healthcare provider, managing a 12-person engineering and QA team.
-            </p>
-          </div>
-
-          <div class="case-study-body">
-            <div class="case-study-grid">
-              <div class="case-study-detail">
-                <h4>Business Problem</h4>
-                <p>
-                  A major healthcare provider needed to modernize their consumer-facing
-                  mobile experience across iOS and Android. Members needed digital access
-                  to membership cards, provider search, care navigation, and analytics.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Technical Challenge</h4>
-                <p>
-                  Deliver five interconnected mobile apps (Digital Membership Card, Find a
-                  Doctor, Precision Analytics, UX Redesign, Find Care) across two platforms
-                  with enterprise-grade reliability at scale.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Constraints</h4>
-                <ul>
-                  <li>HIPAA compliance and healthcare data privacy requirements</li>
-                  <li>Must support 6M+ active users with zero-downtime deployments</li>
-                  <li>Cross-platform consistency across iOS and Android</li>
-                  <li>Enterprise release cycles and approval processes</li>
-                </ul>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>What I Owned</h4>
-                <p>
-                  Managed a 12-person engineering and QA team. Drove sprint planning, scrum
-                  ceremonies, and stakeholder communication. Ensured delivery of all five
-                  projects on schedule with quality standards met.
-                </p>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Approach</h4>
-                <ul>
-                  <li>Structured team into feature squads with clear ownership and accountability</li>
-                  <li>Established sprint cadence with predictable velocity and delivery milestones</li>
-                  <li>Coordinated across engineering, design, and product stakeholders</li>
-                  <li>Implemented QA processes that caught issues before production</li>
-                </ul>
-              </div>
-
-              <div class="case-study-detail">
-                <h4>Outcomes</h4>
-                <ul class="outcomes">
-                  <li>Shipped 5 mobile applications to 6M+ users</li>
-                  <li>Zero critical production incidents during rollout</li>
-                  <li>Established repeatable delivery process adopted by other teams</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="case-study-tech">
-              <strong>Stack:</strong> iOS, Android, Agile/Scrum, Enterprise Architecture
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ==================== AI ENGINEERING ==================== -->
-    <section class="section section-alt" id="ai-engineering">
-      <div class="container">
-        <h2 class="section-title">AI Engineering</h2>
-        <p class="section-subtitle">
-          Production-grade AI systems &mdash; not prototypes. I build AI features that are
-          reliable, explainable, and integrated into real workflows.
-        </p>
-
-        <div class="capabilities-grid">
-          <div class="capability-card">
-            <div class="capability-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
-            </div>
-            <h3>Tool-Calling & Workflow Automation</h3>
-            <p>
-              LLM integrations with structured outputs, function calling, and
-              context-aware pipelines that plug into existing business workflows.
-              Not chatbots &mdash; automation that drives real process changes.
-            </p>
-          </div>
-
-          <div class="capability-card">
-            <div class="capability-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <h3>Evals, Reliability & Guardrails</h3>
-            <p>
-              Confidence scoring, output validation, and guardrail systems that
-              ensure AI features behave predictably. Systematic evaluation
-              pipelines that catch regressions before they reach users.
-            </p>
-          </div>
-
-          <div class="capability-card">
-            <div class="capability-icon">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <h3>Observability & Iteration</h3>
-            <p>
-              Logging, monitoring, and feedback loops that make AI systems
-              debuggable and improvable. Track what works, understand what
-              doesn't, and iterate with data &mdash; not guesswork.
-            </p>
-          </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <span>SCROLL</span>
+          <div class="scroll-arrow">&#9660;</div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== LEADERSHIP ==================== -->
-    <section class="section" id="leadership">
+    <!-- ==================== MARQUEE ==================== -->
+    <div class="marquee-wrapper" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-content">&#9733; REACT &nbsp;&#9733; RUBY ON RAILS &nbsp;&#9733; TYPESCRIPT &nbsp;&#9733; AI/ML &nbsp;&#9733; NODE.JS &nbsp;&#9733; POSTGRESQL &nbsp;&#9733; LLMs &nbsp;&#9733; ELASTICSEARCH &nbsp;&#9733; AWS &nbsp;&#9733; REDUX &nbsp;&#9733; PROMPT ENGINEERING &nbsp;&#9733; RAG PIPELINES &nbsp;</span>
+        <span class="marquee-content">&#9733; REACT &nbsp;&#9733; RUBY ON RAILS &nbsp;&#9733; TYPESCRIPT &nbsp;&#9733; AI/ML &nbsp;&#9733; NODE.JS &nbsp;&#9733; POSTGRESQL &nbsp;&#9733; LLMs &nbsp;&#9733; ELASTICSEARCH &nbsp;&#9733; AWS &nbsp;&#9733; REDUX &nbsp;&#9733; PROMPT ENGINEERING &nbsp;&#9733; RAG PIPELINES &nbsp;</span>
+      </div>
+    </div>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title">Leadership & Collaboration</h2>
-        <p class="section-subtitle">
-          Building great software is a team effort. Here's how I lead and contribute beyond code.
-        </p>
+        <h2 class="section-heading"><span class="accent">//</span> Projects</h2>
+        <p class="section-desc">Things I've built that I'm proud of.</p>
 
-        <div class="leadership-grid">
-          <div class="leadership-item">
-            <div class="leadership-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <div class="projects-list">
+          <!-- Project 1: QualifyAI (Featured) -->
+          <article class="project-card featured">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <span class="project-badge">&#9733; FEATURED</span>
+                <h3 class="project-title">QualifyAI</h3>
+                <p class="project-tagline">Intelligent Lead Qualification for Law Firms</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  Built an AI-powered lead scoring system with explainable confidence levels,
+                  automated workflow triggers, and reporting dashboards for legal intake teams.
+                  Attorneys can see <em>why</em> a lead scored high or low &mdash; no black-box predictions.
+                </p>
+                <div class="project-outcomes">
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Reduced manual lead review time</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Improved intake consistency across firms</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Automated workflow routing by score</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span>Ruby on Rails</span>
+                  <span>React</span>
+                  <span>LLMs</span>
+                  <span>PostgreSQL</span>
+                  <span>ElasticSearch</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Team Management</h3>
-              <p>
-                Managed a 12-person engineering and QA team at PwC, driving sprint planning,
-                delivery cadence, and performance standards for enterprise healthcare products
-                serving millions of users.
-              </p>
-            </div>
-          </div>
+          </article>
 
-          <div class="leadership-item">
-            <div class="leadership-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <!-- Project 2: AI Email Generation -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3 class="project-title">AI Email Generator</h3>
+                <p class="project-tagline">LLM-Powered Client Communications</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  Designed and shipped an LLM-powered email generator that uses firm and contact
+                  context to produce personalized client communications. Built the full pipeline:
+                  context assembly, prompt engineering, streaming responses, and hallucination guardrails.
+                </p>
+                <div class="project-outcomes">
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Contextual drafting for thousands of firms</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Reduced email composition time</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> High adoption across customer base</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span>Ruby on Rails</span>
+                  <span>React</span>
+                  <span>LLM APIs</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Cross-Functional Collaboration</h3>
-              <p>
-                Work closely with product managers, designers, and stakeholders to translate
-                business requirements into technical architecture. Bridge the gap between
-                what the business needs and what the engineering team builds.
-              </p>
-            </div>
-          </div>
+          </article>
 
-          <div class="leadership-item">
-            <div class="leadership-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <!-- Project 3: Healthcare Mobile Platform -->
+          <article class="project-card">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3 class="project-title">Healthcare Mobile Platform</h3>
+                <p class="project-tagline">5 Apps &bull; 6M+ Users &bull; Zero Critical Incidents</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  Led a 12-person engineering team delivering five consumer-facing mobile apps
+                  for a major healthcare provider at PwC. Digital membership cards, provider search,
+                  care navigation &mdash; the whole suite, across iOS and Android.
+                </p>
+                <div class="project-outcomes">
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Shipped 5 apps to 6M+ users</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Zero critical production incidents</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Delivery process adopted by other teams</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span>iOS</span>
+                  <span>Android</span>
+                  <span>Agile/Scrum</span>
+                  <span>Enterprise Arch</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <h3>Mentorship & Knowledge Sharing</h3>
-              <p>
-                Guide junior and mid-level engineers on architecture decisions, code
-                quality, and professional growth. Establish engineering standards and
-                review practices that raise the bar for the whole team.
-              </p>
-            </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ==================== SKILLS ==================== -->
-    <section class="section section-alt" id="skills">
+    <section id="skills" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">Grouped by capability, not a flat list.</p>
+        <h2 class="section-heading"><span class="accent">//</span> Skills</h2>
 
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Backend</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Ruby on Rails</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express</span>
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">ElasticSearch</span>
-              <span class="skill-tag">REST APIs</span>
+        <div class="terminal">
+          <div class="terminal-chrome">
+            <span class="terminal-dot" style="background:#ff5f57"></span>
+            <span class="terminal-dot" style="background:#febc2e"></span>
+            <span class="terminal-dot" style="background:#28c840"></span>
+            <span class="terminal-title">alejandro@dev:~/skills</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="prompt">$</span> cat backend.txt
             </div>
-          </div>
+            <div class="terminal-output">Ruby on Rails &middot; Node.js &middot; Express &middot; PostgreSQL &middot; ElasticSearch &middot; REST APIs</div>
 
-          <div class="skill-group">
-            <h3>Frontend</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">React</span>
-              <span class="skill-tag">Redux</span>
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">HTML / CSS</span>
-              <span class="skill-tag">Responsive Design</span>
+            <div class="terminal-line">
+              <span class="prompt">$</span> cat frontend.txt
             </div>
-          </div>
+            <div class="terminal-output">React &middot; Redux &middot; TypeScript &middot; JavaScript &middot; HTML/CSS &middot; Responsive Design</div>
 
-          <div class="skill-group">
-            <h3>AI / ML</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">LLM Integration</span>
-              <span class="skill-tag">Prompt Engineering</span>
-              <span class="skill-tag">RAG Pipelines</span>
-              <span class="skill-tag">Scoring Systems</span>
-              <span class="skill-tag">Guardrails & Evals</span>
-              <span class="skill-tag">Tool Calling</span>
+            <div class="terminal-line">
+              <span class="prompt">$</span> cat ai-ml.txt
             </div>
-          </div>
+            <div class="terminal-output">LLM Integration &middot; Prompt Engineering &middot; RAG Pipelines &middot; Scoring Systems &middot; Guardrails &amp; Evals &middot; Tool Calling</div>
 
-          <div class="skill-group">
-            <h3>Delivery</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Agile / Scrum</span>
-              <span class="skill-tag">Team Leadership</span>
-              <span class="skill-tag">CI/CD</span>
-              <span class="skill-tag">AWS</span>
-              <span class="skill-tag">Git</span>
-              <span class="skill-tag">Code Review</span>
+            <div class="terminal-line">
+              <span class="prompt">$</span> cat devops.txt
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div class="terminal-output">AWS &middot; CI/CD &middot; Git &middot; Docker &middot; Agile/Scrum &middot; Code Review</div>
 
-    <!-- ==================== HOW I WORK ==================== -->
-    <section class="section" id="how-i-work">
-      <div class="container">
-        <h2 class="section-title">How I Work</h2>
-        <div class="how-grid">
-          <div class="how-item">
-            <h3>Ownership</h3>
-            <p>I take features from idea to production. That means understanding the business context, making architecture decisions, writing the code, and being on the hook for outcomes.</p>
-          </div>
-          <div class="how-item">
-            <h3>Pragmatism</h3>
-            <p>I ship working software. I choose the right tool for the problem, avoid over-engineering, and optimize for iteration speed and long-term maintainability.</p>
-          </div>
-          <div class="how-item">
-            <h3>Quality</h3>
-            <p>Clean code, thoughtful testing, and clear documentation. I write code that other engineers can read, review, and extend without a walkthrough.</p>
+            <div class="terminal-line">
+              <span class="prompt">$</span> <span class="blink">_</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==================== ABOUT ==================== -->
-    <section class="section section-alt" id="about">
+    <section id="about" class="section">
       <div class="container">
-        <h2 class="section-title">About</h2>
-        <div class="about-content">
-          <img src="me-circle.jpg" alt="Alejandro Krasovsky" class="about-photo" width="140" height="140" loading="lazy" />
+        <h2 class="section-heading"><span class="accent">//</span> About</h2>
+        <div class="about-layout">
+          <div class="about-photo-wrap" id="photo-wrap">
+            <img src="me-circle.jpg" alt="Alejandro Krasovsky" class="about-photo" width="200" height="200" loading="lazy" />
+          </div>
           <div class="about-text">
             <p>
-              I'm a senior full-stack engineer with 7+ years of experience building
-              production software at companies like Lawmatics and PwC. I specialize in
-              full-stack development with a growing focus on AI integration &mdash; building
-              systems that are reliable, explainable, and actually useful.
+              I'm a senior full-stack engineer with 7+ years building production
+              software at places like <span class="hl-cyan">Lawmatics</span> and
+              <span class="hl-pink">PwC</span>.
             </p>
             <p>
-              Currently, I'm focused on shipping AI-powered features that help legal
-              professionals work more efficiently. Before that, I led mobile app
-              development for a major healthcare provider at PwC, managing a team of
-              12 engineers and delivering products to millions of users.
+              Right now I'm shipping AI-powered features that help legal professionals
+              work smarter &mdash; lead scoring, email generation, intelligent automation.
+              Before that, I led mobile development for a major healthcare provider,
+              managing 12 engineers and delivering to millions of users.
             </p>
             <p>
-              Outside of work, I'm always reading about new technologies and thinking
-              about how to build things that matter.
+              When I'm not coding, I'm probably reading about whatever new tech thing
+              caught my attention this week.
             </p>
           </div>
         </div>
@@ -543,20 +272,16 @@
     </section>
 
     <!-- ==================== CONTACT ==================== -->
-    <section class="section" id="contact">
+    <section id="contact" class="section section-alt">
       <div class="container">
         <div class="contact-content">
-          <h2 class="section-title">Let's Connect</h2>
-          <p class="section-subtitle">
-            Interested in working together, have a question, or just want to say hello?
-          </p>
-          <a href="mailto:alejandrok93@gmail.com" class="btn btn-primary btn-lg">
-            Send Me an Email
-          </a>
+          <h2 class="section-heading"><span class="accent">//</span> Say Hello</h2>
+          <p class="section-desc">Want to work together? Have a question? Just want to say hi?</p>
+          <a href="mailto:alejandrok93@gmail.com" class="btn btn-primary btn-lg">&lsqb; Send Email &rsqb;</a>
           <div class="contact-links">
-            <a href="https://github.com/alejandrok93" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com/in/alejandrokrasovsky" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="Alejandro-krasovsky-Resume-2024.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+            <a href="https://github.com/alejandrok93" target="_blank" rel="noopener">&lsqb; GitHub &rsqb;</a>
+            <a href="https://linkedin.com/in/alejandrokrasovsky" target="_blank" rel="noopener">&lsqb; LinkedIn &rsqb;</a>
+            <a href="Alejandro-krasovsky-Resume-2024.pdf" target="_blank" rel="noopener">&lsqb; Resume &rsqb;</a>
           </div>
         </div>
       </div>
@@ -566,17 +291,44 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-content">
-        <p>&copy; 2025 Alejandro Krasovsky. All rights reserved.</p>
+        <div class="footer-badges">
+          <span class="retro-badge">Best viewed at 1024x768</span>
+          <span class="retro-badge">Visitors: <span id="visitor-counter">000000</span></span>
+        </div>
+        <p class="footer-copy">&copy; 2025 Alejandro Krasovsky &mdash; Built with HTML, CSS &amp; caffeine</p>
         <div class="footer-links">
-          <a href="https://github.com/alejandrok93" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/alejandrokrasovsky" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/alejandrok93" target="_blank" rel="noopener">&lsqb; GitHub &rsqb;</a>
+          <a href="https://linkedin.com/in/alejandrokrasovsky" target="_blank" rel="noopener">&lsqb; LinkedIn &rsqb;</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Back to top -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">&#9650; TOP</button>
+
+  <!-- Cursor trail dots -->
+  <div class="cursor-dot" id="dot-1" aria-hidden="true"></div>
+  <div class="cursor-dot" id="dot-2" aria-hidden="true"></div>
+  <div class="cursor-dot" id="dot-3" aria-hidden="true"></div>
+
   <script>
-    // Mobile navigation toggle
+    /* ============================================================
+       Page Loader
+       ============================================================ */
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      if (loader) {
+        setTimeout(() => {
+          loader.classList.add('loaded');
+          setTimeout(() => { loader.style.display = 'none'; }, 600);
+        }, 1400);
+      }
+    });
+
+    /* ============================================================
+       Mobile navigation toggle
+       ============================================================ */
     const toggle = document.getElementById('nav-toggle');
     const links = document.getElementById('nav-links');
     if (toggle && links) {
@@ -585,12 +337,115 @@
         toggle.setAttribute('aria-expanded', !expanded);
         links.classList.toggle('open');
       });
-      // Close menu when a link is clicked
       links.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           toggle.setAttribute('aria-expanded', 'false');
           links.classList.remove('open');
         });
+      });
+    }
+
+    /* ============================================================
+       Cursor trail (desktop only)
+       ============================================================ */
+    if (window.matchMedia('(pointer: fine)').matches) {
+      const dots = [
+        document.getElementById('dot-1'),
+        document.getElementById('dot-2'),
+        document.getElementById('dot-3')
+      ];
+      let mouseX = 0, mouseY = 0;
+      const positions = dots.map(() => ({ x: 0, y: 0 }));
+
+      document.addEventListener('mousemove', e => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      });
+
+      function animateDots() {
+        positions.forEach((pos, i) => {
+          const target = i === 0 ? { x: mouseX, y: mouseY } : positions[i - 1];
+          const ease = 0.2 - i * 0.04;
+          pos.x += (target.x - pos.x) * ease;
+          pos.y += (target.y - pos.y) * ease;
+          if (dots[i]) {
+            dots[i].style.left = pos.x + 'px';
+            dots[i].style.top = pos.y + 'px';
+            dots[i].style.opacity = '1';
+          }
+        });
+        requestAnimationFrame(animateDots);
+      }
+      animateDots();
+    }
+
+    /* ============================================================
+       Back to top button
+       ============================================================ */
+    const backBtn = document.getElementById('back-to-top');
+    if (backBtn) {
+      window.addEventListener('scroll', () => {
+        backBtn.classList.toggle('visible', window.scrollY > 500);
+      }, { passive: true });
+      backBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    /* ============================================================
+       Visitor counter animation
+       ============================================================ */
+    const counterEl = document.getElementById('visitor-counter');
+    if (counterEl) {
+      const target = Math.floor(Math.random() * 4000) + 8000;
+      let current = 0;
+      const step = Math.ceil(target / 60);
+      function countUp() {
+        current = Math.min(current + step, target);
+        counterEl.textContent = String(current).padStart(6, '0');
+        if (current < target) requestAnimationFrame(countUp);
+      }
+      /* Start counting when footer is visible */
+      const obs = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) { countUp(); obs.disconnect(); }
+      }, { threshold: 0.3 });
+      obs.observe(counterEl);
+    }
+
+    /* ============================================================
+       Scroll-triggered fade-in for sections
+       ============================================================ */
+    const fadeEls = document.querySelectorAll('.project-card, .terminal, .about-layout, .contact-content');
+    const fadeObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          fadeObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    fadeEls.forEach(el => fadeObs.observe(el));
+
+    /* ============================================================
+       Photo click confetti effect
+       ============================================================ */
+    const photoWrap = document.getElementById('photo-wrap');
+    if (photoWrap) {
+      photoWrap.addEventListener('click', () => {
+        photoWrap.classList.add('clicked');
+        /* Create pixel confetti */
+        for (let i = 0; i < 20; i++) {
+          const pixel = document.createElement('span');
+          pixel.className = 'confetti-pixel';
+          const angle = (Math.PI * 2 / 20) * i;
+          const dist = 60 + Math.random() * 80;
+          pixel.style.setProperty('--tx', Math.cos(angle) * dist + 'px');
+          pixel.style.setProperty('--ty', Math.sin(angle) * dist + 'px');
+          pixel.style.background = ['#00ffff', '#ff00ff', '#39ff14', '#ffff00'][Math.floor(Math.random() * 4)];
+          photoWrap.appendChild(pixel);
+          setTimeout(() => pixel.remove(), 800);
+        }
+        setTimeout(() => photoWrap.classList.remove('clicked'), 600);
       });
     }
   </script>
