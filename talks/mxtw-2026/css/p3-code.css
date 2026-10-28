@@ -1,0 +1,35 @@
+/* Part C2 · Código (slides 19–24). */
+
+/* 19 · five capability cards */
+.p3-card { position: absolute; inset: 0; border-radius: 24px; border: 2px solid var(--line); background: linear-gradient(180deg, var(--panel-hi) 0%, var(--panel) 70%); overflow: hidden; }
+.p3-stage { position: absolute; left: 0; right: 0; top: 0; display: flex; align-items: center; justify-content: center; border-bottom: 2px solid var(--line); background: rgba(0,0,0,0.35); }
+.p3-stage-col { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.p3-card-title { position: absolute; left: 0; right: 0; bottom: 0; height: 136px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 14px; font-size: 32px; font-weight: 700; letter-spacing: -0.004em; line-height: 1.15; }
+.p3-mini { font-size: var(--s-tiny); color: var(--muted); }
+.p3-det-row { display: flex; align-items: center; gap: 18px; padding: 10px 22px; border-radius: 14px; border: 2px solid var(--line); background: var(--bg-deep); font-size: 36px; }
+.p3-table { position: relative; width: 236px; height: 132px; border-radius: 12px; border: 2px solid var(--line); background: var(--bg-deep); overflow: hidden; }
+.p3-stripe { position: absolute; left: 14px; right: 14px; top: 0; height: 10px; border-radius: 5px; background: rgba(166,166,166,0.28); }
+.p3-stripe:nth-child(3n) { right: 70px; }
+.p3-stripe:nth-child(3n+1) { right: 40px; }
+.p3-block { position: absolute; left: 0; width: 236px; height: 56px; display: flex; align-items: center; padding: 0 20px; font-size: 28px; background: var(--bg-deep); border: 2px solid var(--line); }
+.p3-slot { width: 210px; height: 120px; border-radius: 16px; border: 2px solid rgba(245,196,81,0.4); background: rgba(245,196,81,0.07); display: grid; place-items: center; }
+.p3-drop { position: absolute; left: 50%; top: -16px; padding: 4px 14px; border-radius: 10px; background: var(--amber); color: var(--bg-deep); font-size: 26px; font-weight: 700; z-index: 1; }
+
+/* 20 · coding-agent logos */
+.p3-logo-tile { position: absolute; inset: 0; border-radius: 20px; border: 2px solid var(--line); background: var(--panel); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; }
+.p3-logo-name { font-size: 30px; font-weight: 600; white-space: nowrap; }
+
+/* 21 · one trip */
+.p3-gauge { position: absolute; height: 40px; border-radius: 10px; background: var(--bg-deep); border: 2px solid var(--line); overflow: hidden; }
+.p3-call { position: absolute; inset: 0; display: flex; align-items: center; gap: 18px; padding: 0 16px; border-radius: 10px; border: 2px solid transparent; font-size: var(--s-tiny); }
+
+/* 22 · tool wall (same row look as slide 11) */
+.p3-tool { position: absolute; inset: 0; border-left: 4px solid var(--accent); border-radius: 5px; padding-left: 12px; background: rgba(var(--accent-rgb),0.11); font-size: 26px; line-height: 28px; white-space: nowrap; overflow: hidden; }
+.p3-runcode { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 30px; border-radius: 28px; border: 3px solid var(--accent); background: linear-gradient(180deg, #1C1C1C 0%, var(--panel) 100%); font-size: 66px; font-weight: 700; }
+
+/* 23 · the owner's question */
+.p3-ask { display: inline-block; background: var(--chat-in); border-radius: 18px; border-top-left-radius: 6px; padding: 12px 24px 14px; font-size: 32px; line-height: 1.3; }
+
+/* 24 · recap */
+.p3-recap-tile { width: 112px; height: 112px; flex-shrink: 0; display: grid; place-items: center; border-radius: 22px; border: 2px solid var(--line); background: var(--panel); }
+.p3-recap-line { font-size: 54px; font-weight: 700; letter-spacing: -0.008em; line-height: 1.15; }

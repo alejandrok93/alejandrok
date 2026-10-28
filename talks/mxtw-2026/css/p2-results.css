@@ -1,0 +1,44 @@
+/* Part C1 · slides 15–18 (Resultados). */
+
+/* 15 · the owner's question, at stage size. */
+.slide-15 .chat-head { padding: 26px 36px; }
+.slide-15 .avatar { width: 68px; height: 68px; font-size: 32px; }
+.slide-15 .chat-name { font-size: 36px; }
+.slide-15 .chat-status { font-size: 28px; }
+.slide-15 .chat-body { padding: 30px 40px 40px; gap: 22px; justify-content: flex-end; min-height: 500px; }
+.slide-15 .bubble { font-size: 46px; line-height: 1.28; padding: 22px 30px 14px; max-width: 86%; }
+.slide-15 .bubble .meta { font-size: 26px; }
+.slide-15 .day-pill { font-size: 26px; }
+.p2-who { align-self: flex-end; font-size: 26px; color: var(--muted); margin-bottom: -10px; }
+.p2-typing { padding: 26px 30px; gap: 12px; }
+.p2-typing i { width: 16px; height: 16px; animation: p2-dot 1.2s ease-in-out infinite; }
+.p2-typing i:nth-child(2) { animation-delay: 0.18s; }
+.p2-typing i:nth-child(3) { animation-delay: 0.36s; }
+@keyframes p2-dot {
+  0%, 60%, 100% { opacity: 0.35; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-6px); }
+}
+
+/* One JSON record per row: the shared visual for slides 16–18. */
+.p2-row {
+  position: absolute; left: 0; height: 32px; line-height: 32px; padding-left: 14px;
+  border-left: 5px solid; border-radius: 6px; font-family: var(--mono); font-size: 26px;
+  white-space: pre; overflow: hidden; transform-origin: left center;
+  -webkit-mask-image: linear-gradient(90deg, #000 70%, transparent 100%);
+  mask-image: linear-gradient(90deg, #000 70%, transparent 100%);
+}
+
+/* A tool call, tokenized like code. */
+.p2-call {
+  display: inline-block; font-family: var(--mono); font-size: 30px; padding: 10px 20px;
+  border: 2px solid var(--accent); border-radius: 12px; background: var(--bg-deep); white-space: pre;
+}
+.p2-paid {
+  display: inline-block; font-size: 26px; font-weight: 600; color: #FFC2C8; white-space: nowrap;
+  background: var(--danger-soft); border: 2px solid var(--danger); border-radius: 999px; padding: 4px 14px;
+}
+.p2-pill {
+  display: inline-block; padding: 8px 22px; border-radius: 999px; background: var(--danger); color: #fff;
+  font-weight: 700; font-size: 34px; box-shadow: 0 0 0 8px rgba(0,0,0,0.85); white-space: nowrap;
+}
+.p2-panel { background: #0A0A0A; border: 2px solid var(--line-hi); border-radius: 18px; }
