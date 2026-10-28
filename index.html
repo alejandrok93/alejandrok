@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Alejandro Krasovsky // Full-Stack & AI Engineer</title>
-  <meta name="description" content="Senior Full-Stack & AI Engineer with 7+ years building production software. AI agents, legal tech automation, and scalable platforms." />
+  <meta name="description" content="Senior Full-Stack & AI Engineer with 7+ years building production software. AI agents in production since 2025, legal tech automation, and scalable platforms." />
   <meta name="author" content="Alejandro Krasovsky" />
 
   <!-- Open Graph -->
@@ -67,7 +67,7 @@
         <div class="hero-label">&gt; FULL-STACK &amp; AI ENGINEER<span class="blink">_</span></div>
         <h1 class="hero-name glitch" data-text="Alejandro Krasovsky">Alejandro Krasovsky</h1>
         <p class="hero-subtitle">
-          Building AI-powered software &amp; shipping things that matter.
+          Building AI agents in production for the past year and a half.
           <br />7+ years turning complex problems into working products.
         </p>
         <div class="hero-actions">
@@ -104,20 +104,90 @@
     <section id="projects" class="section">
       <div class="container">
         <h2 class="section-heading"><span class="accent">//</span> Projects</h2>
-        <p class="section-desc">Things I've built that I'm proud of.</p>
+        <p class="section-desc">The last year and a half: AI agents in production at Lawmatics, as part of the Merlin AI team.</p>
 
         <div class="projects-list">
-          <!-- Project 1: QualifyAI (Featured) -->
+          <!-- Project 1: Engage AI -->
           <article class="project-card featured">
             <div class="project-card-inner">
               <div class="project-header">
-                <span class="project-badge">&#9733; FEATURED</span>
+                <span class="project-badge">&#9733; AI AGENTS &bull; 2026</span>
+                <h3 class="project-title">Engage AI</h3>
+                <p class="project-tagline">Autonomous Outreach Agents for Law Firms</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  Agents that law firms configure to text new leads 24/7 in the firm's own voice.
+                  Each agent runs an observe &rarr; assess &rarr; act loop until it reaches its goal:
+                  <em>qualify</em> the lead, <em>collect</em> missing case details, or <em>book</em> a consultation.
+                  I built the scheduling and data-collection agents, plus the eval and simulation
+                  tooling that tests agent conversations before they reach a real lead.
+                </p>
+                <div class="project-outcomes">
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Three agent goals: qualification, data collection, scheduling</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Agents write collected answers back to the firm's matters &amp; contacts</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> LLM lead simulator + judge to regression-test conversations</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Extending from SMS to phone agents</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span>TypeScript</span>
+                  <span>Mastra</span>
+                  <span>MCP</span>
+                  <span>Ruby on Rails</span>
+                  <span>React</span>
+                  <span>Evals</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Merlin Copilot -->
+          <article class="project-card featured">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <span class="project-badge">&#9733; AI AGENTS &bull; 2026</span>
+                <h3 class="project-title">Merlin Copilot</h3>
+                <p class="project-tagline">A Conversational Assistant Over Live Firm Data</p>
+              </div>
+              <div class="project-body">
+                <p>
+                  An assistant inside Lawmatics: staff describe what they need in plain language,
+                  and Copilot answers from live firm data, runs reports, and builds forms and automations.
+                  I worked on the tool layer the agent calls &mdash; tenant-scoped MCP tools that
+                  respect each user's permissions &mdash; and on sandboxed code execution for analysis
+                  that a single tool call can't answer.
+                </p>
+                <div class="project-outcomes">
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Agent sees only what the signed-in user can see</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Dozens of MCP tools over CRM, intake, and billing data</div>
+                  <div class="outcome"><span class="outcome-icon">&#9656;</span> Sandboxed code execution for multi-step analysis</div>
+                </div>
+              </div>
+              <div class="project-footer">
+                <div class="project-tags">
+                  <span>TypeScript</span>
+                  <span>MCP</span>
+                  <span>GraphQL</span>
+                  <span>Ruby on Rails</span>
+                  <span>LLMs</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: QualifyAI -->
+          <article class="project-card featured">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <span class="project-badge">&#9733; AI AGENTS &bull; 2025</span>
                 <h3 class="project-title">QualifyAI</h3>
                 <p class="project-tagline">Intelligent Lead Qualification for Law Firms</p>
               </div>
               <div class="project-body">
                 <p>
-                  Built an AI-powered lead scoring system with explainable confidence levels,
+                  Helped build an AI-powered lead scoring system with explainable confidence levels,
                   automated workflow triggers, and reporting dashboards for legal intake teams.
                   Attorneys can see <em>why</em> a lead scored high or low &mdash; no black-box predictions.
                 </p>
@@ -139,7 +209,7 @@
             </div>
           </article>
 
-          <!-- Project 2: Custom Dashboards -->
+          <!-- Project 4: Custom Dashboards -->
           <article class="project-card">
             <div class="project-card-inner">
               <div class="project-header">
@@ -170,7 +240,7 @@
             </div>
           </article>
 
-          <!-- Project 3: Healthcare Mobile Platform -->
+          <!-- Project 5: Healthcare Mobile Platform -->
           <article class="project-card">
             <div class="project-card-inner">
               <div class="project-header">
@@ -259,8 +329,9 @@
               <span class="hl-cyan">Lawmatics</span> and <span class="hl-pink">PwC</span>.
             </p>
             <p>
-              Right now I'm shipping AI-powered features that help legal professionals
-              work smarter &mdash; lead scoring, custom dashboards, intelligent automation.
+              For the past year and a half I've been building AI agents for law firms &mdash;
+              agents that qualify leads, collect case details, book consultations,
+              and answer questions over live firm data.
               Before that, I led mobile development for a major healthcare provider,
               managing 12 engineers and delivering to millions of users.
             </p>
