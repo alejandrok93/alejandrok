@@ -27,49 +27,6 @@
     return wrap;
   };
 
-  // ------------------------------------------------------------------------------- 43
-  (function () {
-    const FIRST_ITEM = 24;
-    const ITEM_GAP = 12;
-    const ITEMS = [
-      { main: 'Red negada por default' },
-      { main: 'Solo capacidades explícitas', detail: '(SDK con los permisos del usuario)' },
-      { main: 'Un sandbox por usuario, nunca compartido' },
-      { main: 'Límites: tiempo, memoria, CPU' },
-      { main: 'Secretos fuera del sandbox' },
-      { main: 'Limpia al terminar' },
-      { main: 'Registra todo lo que corre' },
-      { main: 'Valida antes de ejecutar:', detail: 'no confíes en lo que escribe el modelo' },
-    ];
-    const END = FIRST_ITEM + (ITEMS.length - 1) * ITEM_GAP + 16 + 40;
-    const COLUMN_W = 840;
-    const COLUMN_X = [96, 96 + COLUMN_W + 48];
-    const GRID_TOP = 252;
-    const ROW_H = 182;
-
-    Deck.add({
-      id: '43',
-      title: 'Checklist para agentes seguros',
-      // The whole build autoplays on arrival (~5 s); no clicks.
-      steps: [END],
-      build(k) {
-        k.shapes({ preset: 'header', place: 'translate(0 -34)', at: 4, from: [200, -160] });
-        k.header(null, 'Checklist para agentes seguros');
-        ITEMS.forEach((item, index) => {
-          const column = Math.floor(index / 4);
-          const row = index % 4;
-          const el = k.div({ left: `${COLUMN_X[column]}px`, top: `${GRID_TOP + row * ROW_H}px`, width: `${COLUMN_W}px`, height: `${ROW_H - 14}px`, borderTop: `2px solid ${C.line}`, paddingTop: '22px', display: 'flex', gap: '22px' },
-            h('div', { style: { width: '72px', flexShrink: 0, fontSize: '80px', fontWeight: 800, color: C.accent, lineHeight: 0.95, fontVariantNumeric: 'tabular-nums' } }, String(index + 1)),
-            h('div', { style: { fontSize: '42px', lineHeight: 1.2, paddingTop: '4px' } },
-              h('span', { style: { fontWeight: 600 } }, item.main),
-              item.detail ? h('span', { style: { display: 'block', color: C.muted, fontWeight: 500, fontSize: '40px' } }, item.detail) : null));
-          k.reveal(el, FIRST_ITEM + index * ITEM_GAP, { dx: -20, dy: 0 });
-        });
-        k.footnote(FIRST_ITEM + ITEMS.length * ITEM_GAP, 'Fuente: Harshil Agrawal (Cloudflare), “Why, and how you need to sandbox AI-Generated Code?”, AI Engineer Europe 2026');
-      },
-    });
-  })();
-
   // ------------------------------------------------------------------------------- 44
   // Mirrors slide 3 («En 30 minutos»): the same four beats, now as conclusions. One click per line.
   (function () {
