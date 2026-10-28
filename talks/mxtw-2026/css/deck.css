@@ -1,0 +1,191 @@
+/* Fonts are vendored so the deck runs with zero network. */
+/* MXTW sets everything in ABC Monument Grotesk (Dinamo, commercial, not redistributable). The deck uses
+   Instrument Sans (OFL, Google Fonts), the closest open grotesk. Its static 400/500/600 instances stand in for
+   the requested weights so headlines land on medium like the template: 400 → regular, 500–600 → medium,
+   700 → semibold, 800–900 → medium. Geist only fills in arrows and symbols that Instrument Sans lacks. */
+@font-face { font-family: 'Instrument Sans'; src: url('../fonts/instrument-sans-400-latin.woff2') format('woff2'); font-weight: 100 449; font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Instrument Sans'; src: url('../fonts/instrument-sans-500-latin.woff2') format('woff2'); font-weight: 450 649; font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Instrument Sans'; src: url('../fonts/instrument-sans-600-latin.woff2') format('woff2'); font-weight: 650 749; font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Instrument Sans'; src: url('../fonts/instrument-sans-500-latin.woff2') format('woff2'); font-weight: 750 1000; font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Instrument Sans'; src: url('../fonts/instrument-sans-400-latin-ext.woff2') format('woff2'); font-weight: 100 449; font-display: block;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Instrument Sans'; src: url('../fonts/instrument-sans-500-latin-ext.woff2') format('woff2'); font-weight: 450 649; font-display: block;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Instrument Sans'; src: url('../fonts/instrument-sans-600-latin-ext.woff2') format('woff2'); font-weight: 650 749; font-display: block;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Instrument Sans'; src: url('../fonts/instrument-sans-500-latin-ext.woff2') format('woff2'); font-weight: 750 1000; font-display: block;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* Geist: fallback for glyphs outside Instrument Sans (arrows, math, symbols). */
+@font-face { font-family: 'Geist'; src: url('../fonts/geist-latin.woff2') format('woff2'); font-weight: 100 900; font-display: block;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Geist'; src: url('../fonts/Geist-Variable.woff2') format('woff2'); font-weight: 100 900; font-display: block;
+  unicode-range: U+2190, U+2192, U+2194-21FF, U+2200-2211, U+2213-2214, U+2216-2BFF; }
+@font-face { font-family: 'JetBrains Mono'; src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2'); font-weight: 400; font-display: block; }
+@font-face { font-family: 'JetBrains Mono'; src: url('../fonts/JetBrainsMono-Medium.woff2') format('woff2'); font-weight: 500 600; font-display: block; }
+@font-face { font-family: 'JetBrains Mono'; src: url('../fonts/JetBrainsMono-Bold.woff2') format('woff2'); font-weight: 700 800; font-display: block; }
+/* Tokens mirror K.C in js/lib.js. MXTW 2026: pure black, white type, one flat accent per act.
+   The engine sets --accent / --accent-rgb / --accent-soft on every slide from its act (K.ACCENTS). */
+:root {
+  --bg: #000000;
+  --bg-deep: #000000;
+  --panel: #0E0E0E;
+  --panel-hi: #161616;
+  --line: rgba(255,255,255,0.16);
+  --line-hi: rgba(255,255,255,0.32);
+  --ink: #FFFFFF;
+  --muted: #A6A6A6;
+  --dim: #767676;
+  --accent: #9161F1;
+  --accent-rgb: 145,97,241;
+  --accent-soft: rgba(145,97,241,0.16);
+  --mx-purple: #9161F1;
+  --mx-yellow: #FFD800;
+  --mx-pink: #F9A0D1;
+  --mx-lime: #BED700;
+  --mx-orange: #FF5B29;
+  --mx-blue: #4F8FE6;
+  --mx-green: #4AE082;
+  --danger: #FF4D5E;
+  --danger-soft: rgba(255,77,94,0.16);
+  --safe: #4AE082;
+  --safe-soft: rgba(74,224,130,0.16);
+  --amber: #F5C451;
+  --chat-bg: #0B0B0B;
+  --chat-in: #232323;
+  --chat-out: #144D37;
+  --chat-meta: #8C8C8C;
+  --c-text: #EDEDED;
+  --c-keyword: #C9A2FF;
+  --c-string: #9FE0A8;
+  --c-number: #F7C46C;
+  --c-comment: #6E6E6E;
+  --c-fn: #7CC7FF;
+  --c-punct: #9A9A9A;
+  --c-prop: #F2B9A0;
+  --sans: 'Instrument Sans', 'Geist', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, monospace;
+  --s-title: 72px;
+  --s-kicker: 26px;
+  --s-big: 56px;
+  --s-body: 40px;
+  --s-label: 32px;
+  --s-small: 28px;
+  --s-tiny: 26px;
+  --s-code: 28px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg-deep); overflow: hidden; }
+body { font-family: var(--sans); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+#viewport { position: fixed; inset: 0; background: var(--bg-deep); overflow: hidden; }
+.stage {
+  position: absolute; left: 0; top: 0; width: 1920px; height: 1080px;
+  transform-origin: 0 0; overflow: hidden; background: var(--bg);
+  /* Code ligatures (=> as ⇒, ++ merged) confuse an audience reading from far away. */
+  font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0;
+}
+.slide {
+  position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden; display: none;
+  background: var(--bg);
+  color: var(--ink); font-family: var(--sans);
+}
+.slide.is-current { display: block; }
+.abs { position: absolute; }
+.mono { font-family: var(--mono); font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+.full-svg { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+
+/* Slide header shared by every visual: a white grotesk title at medium weight, normal tracking (MXTW template). */
+.hdr { position: absolute; left: 96px; top: 64px; }
+.hdr .kicker { font-size: var(--s-kicker); font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+.hdr .title { font-size: var(--s-title); font-weight: 500; letter-spacing: -0.012em; line-height: 1.05; }
+.hdr.text .title { font-weight: 500; letter-spacing: -0.012em; }
+
+.box {
+  position: absolute; border-radius: 20px; background: var(--panel); border: 2px solid var(--line-hi);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
+.chip {
+  display: inline-block; padding: 8px 16px; border-radius: 12px; border: 2px solid var(--accent);
+  background: var(--bg-deep); color: var(--ink); font-family: var(--mono); font-size: var(--s-tiny); white-space: nowrap;
+}
+.code { font-family: var(--mono); white-space: pre; color: var(--c-text); }
+.code .ln { border-radius: 6px; }
+.caret { display: inline-block; background: var(--accent); vertical-align: middle; }
+
+/* Generic dark messenger look. No logo. */
+.chat { background: var(--chat-bg); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+.chat-head { display: flex; align-items: center; gap: 18px; padding: 22px 30px; border-bottom: 1px solid var(--line); background: #151515; }
+.avatar { width: 58px; height: 58px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 28px; color: #000; background: var(--accent); flex-shrink: 0; }
+.chat-name { font-weight: 700; font-size: 30px; }
+.chat-status { color: var(--chat-meta); font-size: 24px; margin-top: 2px; }
+.chat-body { padding: 26px 30px; display: flex; flex-direction: column; gap: 18px; }
+.bubble { max-width: 82%; padding: 16px 22px 12px; border-radius: 18px; font-size: 32px; line-height: 1.32; position: relative; }
+.bubble.in { background: var(--chat-in); align-self: flex-start; border-top-left-radius: 6px; }
+.bubble.out { background: var(--chat-out); align-self: flex-end; border-top-right-radius: 6px; }
+.bubble .meta { display: block; text-align: right; color: var(--chat-meta); font-size: 22px; margin-top: 6px; }
+.bubble .meta .ticks { color: #53BDEB; margin-left: 6px; letter-spacing: -0.2em; }
+.typing { align-self: flex-start; background: var(--chat-in); border-radius: 18px; border-top-left-radius: 6px; padding: 20px 24px; display: flex; gap: 8px; }
+.typing.out { align-self: flex-end; background: var(--chat-out); border-radius: 18px; border-top-right-radius: 6px; }
+.typing i { width: 12px; height: 12px; border-radius: 50%; background: var(--chat-meta); display: block; }
+.day-pill { align-self: center; background: #1E1E1E; color: var(--chat-meta); font-size: 22px; padding: 6px 16px; border-radius: 8px; }
+
+/* Progress bar: thin, split into acts, inside the stage so it scales with it. Each act segment wears its
+   own MXTW accent (--act, set by the engine); flat and square like the template. */
+.progress { position: absolute; left: 0; right: 0; bottom: 0; height: 40px; pointer-events: none; transition: opacity 400ms cubic-bezier(0.22,1,0.36,1); z-index: 50; }
+.progress.dim { opacity: 0.18; }
+.progress.hide { opacity: 0; }
+.progress .acts { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; display: flex; gap: 6px; }
+.progress .act { position: relative; height: 6px; background: rgba(255,255,255,0.10); overflow: hidden; }
+.progress .act .fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--act); }
+.progress .act.done .fill { opacity: 0.45; }
+.progress .labels { position: absolute; left: 0; right: 0; bottom: 12px; display: flex; gap: 6px; }
+.progress .labels span { font-family: var(--sans); font-size: 16px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; opacity: 0.3; padding-left: 10px; white-space: nowrap; overflow: hidden; transition: color 300ms, opacity 300ms; }
+.progress .labels span.on { color: var(--act); opacity: 1; }
+/* Full-bleed accent slides: the bar goes black so it reads on the flat colour. */
+.progress.on-flood .act { background: rgba(0,0,0,0.16); }
+.progress.on-flood .act .fill { background: #000; }
+.progress.on-flood .labels span { color: #000; opacity: 0.45; }
+.progress.on-flood .labels span.on { color: #000; opacity: 0.9; }
+
+/* MXTW motif and lockup. */
+.mx-shapes { z-index: 0; }
+.mx-lockup { z-index: 5; }
+
+/* Overlays live outside the stage, at viewport scale. */
+#black { position: fixed; inset: 0; background: #000; z-index: 90; opacity: 0; pointer-events: none; transition: opacity 250ms; }
+#black.on { opacity: 1; pointer-events: auto; }
+#help {
+  position: fixed; inset: 0; z-index: 95; display: none; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.82); backdrop-filter: blur(6px);
+}
+#help.on { display: flex; }
+#help .card { background: var(--panel); border: 1px solid var(--line-hi); border-radius: 18px; padding: 32px 40px; min-width: 520px; font-size: 17px; color: var(--muted); }
+#help h2 { margin: 0 0 18px; color: var(--ink); font-size: 22px; }
+#help table { border-collapse: collapse; }
+#help td { padding: 7px 18px 7px 0; vertical-align: top; }
+#help kbd { font-family: var(--mono); font-size: 14px; color: var(--ink); background: var(--bg-deep); border: 1px solid var(--line-hi); border-bottom-width: 2px; border-radius: 6px; padding: 2px 7px; margin-right: 4px; }
+#help .foot { margin-top: 16px; font-size: 14px; color: var(--dim); }
+#toast {
+  position: fixed; left: 50%; bottom: 28px; transform: translateX(-50%); z-index: 96;
+  font-family: var(--mono); font-size: 15px; color: var(--ink); background: rgba(14,14,14,0.92);
+  border: 1px solid var(--line-hi); border-radius: 10px; padding: 8px 14px; opacity: 0; transition: opacity 200ms; pointer-events: none;
+}
+#toast.on { opacity: 1; }
+
+/* Preview mode (inside the presenter window): no chrome. */
+.mode-preview .progress { display: none; }
+
+@media print {
+  @page { size: 1920px 1080px; margin: 0; }
+  html, body { overflow: visible; height: auto; background: var(--bg-deep); }
+  #viewport { position: static; overflow: visible; }
+  .stage { position: static; transform: none !important; overflow: visible; height: auto; background: none; }
+  .slide { display: block !important; position: relative; break-after: page; page-break-after: always; }
+  .progress, #black, #help, #toast { display: none !important; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

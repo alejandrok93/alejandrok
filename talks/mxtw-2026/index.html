@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dale una computadora a tu agente</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/deck.css">
+  <link rel="stylesheet" href="css/p0-intro.css">
+  <link rel="stylesheet" href="css/p1-tools.css">
+  <link rel="stylesheet" href="css/p2-results.css">
+  <link rel="stylesheet" href="css/p3-code.css">
+  <link rel="stylesheet" href="css/p4-risk.css">
+  <link rel="stylesheet" href="css/p5-safety.css">
+  <link rel="stylesheet" href="css/p5b-safety.css">
+  <link rel="stylesheet" href="css/p6-close.css">
+</head>
+<body>
+  <div id="viewport"></div>
+  <div id="black"></div>
+  <div id="toast"></div>
+  <div id="help">
+    <div class="card">
+      <h2>Controles</h2>
+      <table>
+        <tr><td><kbd>→</kbd><kbd>Espacio</kbd><kbd>PgDn</kbd><kbd>clic</kbd></td><td>siguiente paso</td></tr>
+        <tr><td><kbd>←</kbd><kbd>PgUp</kbd></td><td>paso anterior</td></tr>
+        <tr><td><kbd>Inicio</kbd><kbd>Fin</kbd></td><td>primera / última slide</td></tr>
+        <tr><td><kbd>18</kbd><kbd>Enter</kbd></td><td>ir a la slide 18 (también <kbd>2b</kbd>)</td></tr>
+        <tr><td><kbd>F</kbd></td><td>pantalla completa</td></tr>
+        <tr><td><kbd>B</kbd></td><td>pantalla negra</td></tr>
+        <tr><td><kbd>S</kbd></td><td>vista del ponente</td></tr>
+        <tr><td><kbd>M</kbd></td><td>animaciones sí / no</td></tr>
+        <tr><td><kbd>?</kbd></td><td>esta ayuda</td></tr>
+      </table>
+      <div class="foot">La URL guarda la posición: #18.2 = slide 18, paso 2.</div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/lib.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/notes.js"></script>
+  <script src="js/presenter.js"></script>
+  <script src="js/slides/p0-intro.js"></script>
+  <script src="js/slides/p1-tools.js"></script>
+  <script src="js/slides/p2-results.js"></script>
+  <script src="js/slides/p3-code.js"></script>
+  <script src="js/slides/p4-risk.js"></script>
+  <script src="js/slides/p5-safety.js"></script>
+  <script src="js/slides/p5b-safety.js"></script>
+  <script src="js/slides/p6-close.js"></script>
+  <script>
+    // Fonts are local; waiting for them keeps the first frame from reflowing.
+    var faces = ['400 20px "Instrument Sans"', '500 20px "Instrument Sans"', '700 20px "Instrument Sans"', '400 20px Geist', '400 20px "JetBrains Mono"', '500 20px "JetBrains Mono"', '700 20px "JetBrains Mono"'];
+    Promise.all(faces.map(function (face) { return document.fonts.load(face, 'aé→✓'); }))
+      .catch(function () {})
+      .then(function () { Deck.boot(); });
+  </script>
+</body>
+</html>
